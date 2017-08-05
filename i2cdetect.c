@@ -65,7 +65,7 @@ ssize_t i2c_detect_write(struct file *file, const char __user *buffer, size_t co
 	return count;
 }
 
-//0xff addr1 add2 0xff addr3 0xddr4 0xff
+//0xff addr1 addr2 0xff addr3 addr4 0xff
 static int i2c_detect_all_show(struct seq_file *m, void *v)
 {
 	int i=0;
